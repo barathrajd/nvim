@@ -7,6 +7,7 @@ call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'sheerun/vim-polyglot'
   Plug 'miyakogi/conoline.vim'
+  Plug 'nvim-treesitter/nvim-treesitter'
 call plug#end()
 
 " Color Scheme
