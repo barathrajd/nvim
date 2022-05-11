@@ -7,7 +7,8 @@ call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'sheerun/vim-polyglot'
   Plug 'miyakogi/conoline.vim'
-  Plug 'nvim-treesitter/nvim-treesitter'
+  Plug 'nvim-treesitter/nvim-treesitter',{'do': ':TSUpdate'}
+  Plug 'preservim/nerdtree'
 call plug#end()
 
 " Color Scheme
@@ -23,9 +24,9 @@ set mouse=v                 " middle-click paste with
 set hlsearch                " highlight search 
 set incsearch               " incremental search
 set tabstop=2               " number of columns occupied by a tab 
-set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
+set softtabstop=2           " see multiple spaces as tabstops so <BS> does the right thing
 set expandtab               " converts tabs to white space
-set shiftwidth=4            " width for autoindents
+set shiftwidth=2           " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
 set number                  " add line numbers
 filetype plugin indent on   "allow auto-indenting depending on file type
@@ -69,3 +70,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+nmap <silent> <C-D> :NERDTreeToggle<CR>
+
