@@ -68,15 +68,3 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-" Vim Javascript 
-let g:javascript_plugin_jsdoc = 1
-let g:javascript_plugin_ngdoc = 1
-let g:javascript_plugin_flow = 1
-
-set conceallevel=1
-
-let g:javascript_conceal_function             = "ƒ"
-let g:javascript_conceal_arrow_function       = "⇒"
-
-let g:jsx_ext_required = 0
