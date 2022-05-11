@@ -6,8 +6,7 @@ call plug#begin()
   Plug 'joshdick/onedark.vim'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'sheerun/vim-polyglot'
-  Plug 'pangloss/vim-javascript'
-  Plug 'mxw/vim-jsx'
+  Plug 'miyakogi/conoline.vim'
 call plug#end()
 
 " Color Scheme
@@ -36,7 +35,6 @@ filetype plugin on
 " set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
 " set spell                 " enable spell check (may need to download language package)
-" set noswapfile            " disable creating swap file
 let mapleader=" "
 
 " Air Line Config
