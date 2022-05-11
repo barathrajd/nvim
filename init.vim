@@ -49,7 +49,7 @@ let g:airline#extensions#whitespace#enabled = 0
 " COC
 let g:coc_global_extensions = ["coc-css", "coc-eslint","coc-html","coc-json","coc-prettier","coc-python","coc-snippets","coc-tsserver","coc-tslint"]
 
-let g:python3_host_prog = 'C:\Users\Barathraj Devarajan\AppData\Local\Programs\Python\Python310\python.exe'
+let g:python3_host_prog = '/usr/bin/python3'
 
 " Use <Tab> and <S-Tab> to navigate the completion list
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
