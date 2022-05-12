@@ -47,7 +47,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#whitespace#enabled = 0
 
 " COC
-let g:coc_global_extensions = ["coc-css", "coc-eslint","coc-html","coc-json","coc-prettier","coc-python","coc-snippets","coc-tsserver","coc-tslint"]
+let g:coc_global_extensions = ["coc-css","coc-eslint","coc-html","coc-json","coc-prettier","coc-python","coc-snippets","coc-tsserver","coc-tslint"]
 
 let g:python3_host_prog = '/usr/bin/python3'
 
