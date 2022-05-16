@@ -9,6 +9,7 @@ call plug#begin()
   Plug 'miyakogi/conoline.vim'
   Plug 'nvim-treesitter/nvim-treesitter',{'do': ':TSUpdate'}
   Plug 'preservim/nerdtree'
+  Plug 'alvan/vim-closetag'
 call plug#end()
 
 " Color Scheme
@@ -47,7 +48,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#whitespace#enabled = 0
 
 " COC
-let g:coc_global_extensions = ["coc-css","coc-eslint","coc-html","coc-json","coc-prettier","coc-python","coc-snippets","coc-tsserver","coc-tslint"]
+let g:coc_global_extensions = ["coc-css","coc-eslint","coc-html","coc-json","coc-prettier","coc-python","coc-snippets","coc-tsserver","coc-tslint","coc-pairs","coc-snippets"]
 
 let g:python3_host_prog = '/usr/bin/python3'
 
@@ -73,3 +74,56 @@ nnoremap <C-l> <C-w>l
 
 nmap <silent> <C-D> :NERDTreeToggle<CR>
 
+" filenames like *.xml, *.html, *.xhtml, ...
+" These are the file extensions where this plugin is enabled.
+"
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+
+" filenames like *.xml, *.xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+
+" filetypes like xml, html, xhtml, ...
+" These are the file types where this plugin is enabled.
+"
+let g:closetag_filetypes = 'html,xhtml,phtml'
+
+" filetypes like xml, xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+
+" integer value [0|1]
+" This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
+"
+let g:closetag_emptyTags_caseSensitive = 1
+
+" dict
+" Disables auto-close if not in a "valid" region (based on filetype)
+"
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ 'typescriptreact': 'jsxRegion,tsxRegion',
+    \ 'javascriptreact': 'jsxRegion',
+    \ }
+
+" Shortcut for closing tags, default is '>'
+"
+let g:closetag_shortcut = '>'
+
+" Add > at current position without closing the current tag, default is ''
+"
+let g:closetag_close_shortcut = '<leader>>'
+
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>
