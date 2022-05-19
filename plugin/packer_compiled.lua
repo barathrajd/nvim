@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/barathraj-affinsys/.local/share/nvim/site/pack/packer/start/awesome-vim-colorschemes",
     url = "https://github.com/rafi/awesome-vim-colorschemes"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/barathraj-affinsys/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/barathraj-affinsys/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -198,6 +203,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/barathraj-affinsys/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-bbye"] = {
+    loaded = true,
+    path = "/home/barathraj-affinsys/.local/share/nvim/site/pack/packer/start/vim-bbye",
+    url = "https://github.com/moll/vim-bbye"
   }
 }
 

@@ -1,6 +1,6 @@
--- :help options 
-local options = { 
-	backup = false, 
+-- :help options
+local options = {
+	backup = false,
 	cmdheight = 1,
 	clipboard = "unnamedplus",
  	conceallevel = 0,
@@ -24,7 +24,8 @@ local options = {
   wrap = false,
   scrolloff = 8,
   sidescrolloff = 8,
-  completeopt = {"menuone","noselect"}, 
+  completeopt = {"menuone","noselect"},
+  termguicolors = true,
 }
 
 vim.opt.shortmess:append "c"
