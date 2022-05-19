@@ -1,9 +1,9 @@
 -- :help options
 local options = {
-	backup = false,
-	cmdheight = 1,
-	clipboard = "unnamedplus",
- 	conceallevel = 0,
+  backup = false,
+  cmdheight = 1,
+  clipboard = "unnamedplus",
+  conceallevel = 0,
   fileencoding = "utf-8",
   hlsearch = true,
   ignorecase = true,
@@ -12,10 +12,10 @@ local options = {
   showtabline = 2,
   smartcase = true,
   smartindent = true,
-  splitbelow = true ,
+  splitbelow = true,
   splitright = true,
   expandtab = true,
-  shiftwidth = 2 ,
+  shiftwidth = 2,
   tabstop = 2,
   number = true,
   relativenumber = false,
@@ -24,7 +24,7 @@ local options = {
   wrap = false,
   scrolloff = 8,
   sidescrolloff = 8,
-  completeopt = {"menuone","noselect"},
+  completeopt = { "menuone", "noselect" },
   termguicolors = true,
 }
 
@@ -34,5 +34,5 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 
 for k, v in pairs(options) do
-    vim.opt[k] = v
+  vim.opt[k] = v
 end
