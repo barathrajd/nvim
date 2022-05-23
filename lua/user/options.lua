@@ -26,6 +26,7 @@ local options = {
 	sidescrolloff = 8,
 	completeopt = { "menuone", "noselect" },
 	termguicolors = true,
+	background = "dark",
 }
 
 vim.opt.shortmess:append("c")
