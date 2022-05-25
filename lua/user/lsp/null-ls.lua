@@ -12,8 +12,8 @@ local code_actions = null_ls.builtins.code_actions
 null_ls.setup({
 	debug = false,
 	sources = {
-		diagnostics.eslint,
-		code_actions.eslint,
+		-- diagnostics.eslint,
+		-- code_actions.eslint,
 		formatting.prettier.with({
 			filetypes = {
 				"javascript",
