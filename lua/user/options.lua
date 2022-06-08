@@ -27,6 +27,7 @@ local options = {
 	completeopt = { "menuone", "noselect" },
 	termguicolors = true,
 	background = "dark",
+	syntax = "on",
 }
 
 vim.opt.shortmess:append("c")

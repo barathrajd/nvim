@@ -84,15 +84,19 @@ nvim_tree.setup({
 		number = false,
 		relativenumber = false,
 	},
-	-- quit_on_open = 0,
-	-- git_hl = 1,
-	-- disable_window_picker = 0,
-	-- root_folder_modifier = ":t",
-	-- show_icons = {
-	--   git = 1,
-	--   folders = 1,
-	--   files = 1,
-	--   folder_arrows = 1,
-	--   tree_width = 30,
-	-- },
+	renderer = {
+		icons = {
+			webdev_colors = true,
+			show = { git = true, folder = true, file = true, folder_arrow = true },
+		},
+		highlight_opened_files = "3",
+	},
+	actions = {
+		open_file = {
+			quit_on_open = false,
+			window_picker = {
+				enable = false,
+			},
+		},
+	},
 })
