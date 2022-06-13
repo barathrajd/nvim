@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup({
-	ensure_installed = { "c", "lua", "rust" },
+	ensure_installed = { "c", "lua", "rust", "javascript", "python", "jsdoc", "json", "css", "scss" },
 	sync_install = false,
 	ignore_install = { "" }, -- List of parsers to ignore installing
 	autopairs = {
