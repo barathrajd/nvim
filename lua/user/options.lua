@@ -28,6 +28,7 @@ local options = {
 	termguicolors = true,
 	background = "dark",
 	syntax = "on",
+	cursorline = true,
 }
 
 vim.opt.shortmess:append("c")
