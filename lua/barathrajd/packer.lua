@@ -7,13 +7,6 @@ require("packer").startup(function(use)
 		tag = "0.1.0",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
-	use({
-		"rose-pine/neovim",
-		as = "rose-pine",
-		--config = function()
-		--vim.cmd("colorscheme rose-pine")
-		--end,
-	})
 	use("rebelot/kanagawa.nvim")
 	use({
 		"nvim-treesitter/nvim-treesitter",
@@ -54,6 +47,13 @@ require("packer").startup(function(use)
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
 	use("nvim-tree/nvim-tree.lua")
+	use("rafi/awesome-vim-colorschemes")
+	use({
+		"lewis6991/gitsigns.nvim",
+		config = function()
+			require("gitsigns").setup()
+		end,
+	})
 end)
 
 vim.cmd([[colorscheme kanagawa]])
