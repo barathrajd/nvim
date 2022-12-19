@@ -47,13 +47,22 @@ require("packer").startup(function(use)
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
 	use("nvim-tree/nvim-tree.lua")
-	use("rafi/awesome-vim-colorschemes")
 	use({
 		"lewis6991/gitsigns.nvim",
 		config = function()
 			require("gitsigns").setup()
 		end,
 	})
+	use("JoosepAlviste/palenightfall.nvim")
+	use({
+		"kylechui/nvim-surround",
+		tag = "main", -- Use for stability; omit to use `main` branch for the latest features
+		config = function()
+			require("nvim-surround").setup({
+				-- Configuration here, or leave empty to use defaults
+			})
+		end,
+	})
 end)
 
-vim.cmd([[colorscheme kanagawa]])
+vim.cmd([[colorscheme palenightfall]])
