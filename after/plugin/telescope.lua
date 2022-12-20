@@ -5,6 +5,7 @@ require("telescope").setup({
 	},
 	pickers = {
 		find_files = {
+			hidden = true,
 			previewer = false,
 			theme = "dropdown",
 		},
