@@ -2,6 +2,7 @@ vim.cmd([[packadd packer.nvim]])
 
 require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
+	use("kyazdani42/nvim-web-devicons")
 	use({
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.0",
@@ -60,6 +61,18 @@ require("packer").startup(function(use)
 		config = function()
 			require("nvim-surround").setup({
 				-- Configuration here, or leave empty to use defaults
+			})
+		end,
+	})
+	use("folke/lsp-colors.nvim")
+	use({
+		"folke/trouble.nvim",
+		requires = "kyazdani42/nvim-web-devicons",
+		config = function()
+			require("trouble").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
 			})
 		end,
 	})
