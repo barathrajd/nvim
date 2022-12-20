@@ -76,6 +76,21 @@ require("packer").startup(function(use)
 			})
 		end,
 	})
+	use({
+		"folke/which-key.nvim",
+		config = function()
+			require("which-key").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
+	})
+	use("tpope/vim-fugitive")
+	use({
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+	})
 end)
 
 vim.cmd([[colorscheme palenightfall]])
