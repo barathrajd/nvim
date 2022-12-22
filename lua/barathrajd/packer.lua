@@ -91,6 +91,7 @@ require("packer").startup(function(use)
 		"glepnir/lspsaga.nvim",
 		branch = "main",
 	})
+	use("MunifTanjim/prettier.nvim")
 end)
 
 vim.cmd([[colorscheme palenightfall]])
