@@ -12,13 +12,6 @@ telescope.setup({
       },
     },
   },
-  extensions = {
-    file_browser = {
-      theme = "dropdown",
-      -- disables netrw and use telescope-file-browser in its place
-      hijack_netrw = true,
-    },
-  },
   pickers = {
     find_files = {
       hidden = true,
@@ -47,5 +40,3 @@ telescope.setup({
     },
   },
 })
-
-telescope.load_extension("file_browser")
