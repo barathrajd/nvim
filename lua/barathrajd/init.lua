@@ -1,3 +1,3 @@
 require("barathrajd.remap")
-require("barathrajd.packer")
+require("barathrajd.plugins")
 require("barathrajd.options")
