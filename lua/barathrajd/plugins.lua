@@ -120,7 +120,8 @@ return packer.startup(function(use)
   })
   use("tpope/vim-fugitive")
   use("MunifTanjim/prettier.nvim")
-  use { 'akinsho/bufferline.nvim', tag = "v3.*" }
+  use({ 'akinsho/bufferline.nvim', tag = "v3.*" })
+  use("lukas-reineke/indent-blankline.nvim")
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end
