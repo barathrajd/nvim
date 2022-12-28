@@ -93,7 +93,7 @@ return packer.startup(function(use)
     end,
   })
   -- Theme
-  use 'Mofiqul/dracula.nvim'
+  use({ 'olimorris/onedarkpro.nvim' })
   -- Nvim surround
   use({
     "kylechui/nvim-surround",
