@@ -13,19 +13,18 @@ map("n", "<C-b>", ":NvimTreeToggle<CR>", options)
 
 -- Telescope
 vim.keymap.set("n", "<C-f>", builtin.find_files, options)
-vim.keymap.set("n", "<C-g>", builtin.git_files, options)
-vim.keymap.set("n", "<C-s>", function()
+vim.keymap.set("n", "<C-g>", function()
   builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end, options)
 vim.keymap.set("n", "<C-c>", builtin.buffers, options)
-vim.keymap.set("n", "<M-h>", builtin.help_tags, options)
-vim.keymap.set("n", "<C-l>", builtin.live_grep, options)
+vim.keymap.set("n", "<leader>h", builtin.help_tags, options)
+vim.keymap.set("n", "<leader>l", builtin.live_grep, options)
 
 -- Trouble
 vim.keymap.set("n", "<C-t>", ":TroubleToggle<CR>")
 
 -- Switch Windows
-vim.keymap.set("n", "<C-h>", "<C-w><C-h>", options)
-vim.keymap.set("n", "<C-j>", "<C-w><C-j>", options)
-vim.keymap.set("n", "<C-k>", "<C-w><C-k>", options)
-vim.keymap.set("n", "<C-l>", "<C-w><C-l>", options)
+map("n", "<C-h>", "<C-w><C-h>", options)
+map("n", "<C-j>", "<C-w><C-j>", options)
+map("n", "<C-k>", "<C-w><C-k>", options)
+map("n", "<C-l>", "<C-w><C-l>", options)
