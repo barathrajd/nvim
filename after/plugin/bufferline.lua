@@ -5,23 +5,12 @@ end
 
 bufferLine.setup {
   options = {
-    -- offsets = {
-    --   filetype = "NvimTree",
-    --   text = function()
-    --     return vim.fn.cwd()
-    --   end,
-    --   highlights = "Directory",
-    --   separator = true,
-    --   text_align = "center"
-    -- }
     offsets = {
       {
         filetype = "NvimTree",
-        text = function()
-          return vim.loop.cwd();
-        end,
+        text = "File Explorer",
         separator = true,
-        text_align = "left"
+        text_align = "center"
       }
     },
   }
