@@ -1,9 +1,7 @@
 vim.g.mapleader = " "
-
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
-
 vim.opt.clipboard = ""
 vim.opt.autoindent = true
 vim.opt.smartindent = true
@@ -30,8 +28,5 @@ vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
 vim.opt.splitright = true
 vim.opt.splitbelow = true
---vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
---vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-vim.cmd [[colorscheme darkplus]]
--- vim.cmd([[colorscheme palenightfall]])
--- vim.cmd([[colorscheme kanagawa]])
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })

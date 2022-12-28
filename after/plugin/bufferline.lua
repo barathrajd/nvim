@@ -9,7 +9,7 @@ bufferLine.setup {
       {
         filetype = "NvimTree",
         text = "File Explorer",
-        separator = true,
+        separator = false,
         text_align = "center"
       }
     },

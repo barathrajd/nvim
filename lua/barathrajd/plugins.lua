@@ -93,7 +93,7 @@ return packer.startup(function(use)
     end,
   })
   -- Theme
-  use "lunarvim/darkplus.nvim"
+  use 'Mofiqul/dracula.nvim'
   -- Nvim surround
   use({
     "kylechui/nvim-surround",
@@ -121,7 +121,7 @@ return packer.startup(function(use)
   use("tpope/vim-fugitive")
   use("MunifTanjim/prettier.nvim")
   use({ 'akinsho/bufferline.nvim', tag = "v3.*" })
-  use("lukas-reineke/indent-blankline.nvim")
+  -- use("lukas-reineke/indent-blankline.nvim")
   if PACKER_BOOTSTRAP then
     require('packer').sync()
   end
