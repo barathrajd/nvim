@@ -44,6 +44,7 @@ return packer.startup(function(use)
     requires = { { "nvim-lua/plenary.nvim" } },
   })
   -- use 'nvim-telescope/telescope-file-browser.nvim'
+  -- use({ "nvim-telescope/telescope-ui-select.nvim" })
   -- Nvim treesitter for the syntax highlight
   use({
     "nvim-treesitter/nvim-treesitter",

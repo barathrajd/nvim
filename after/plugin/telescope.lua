@@ -5,11 +5,14 @@ local actions = require('telescope.actions')
 telescope.setup({
   defaults = {
     file_ignore_patterns = { "node_modules", ".git" },
-    -- previewer = false,
+    previewer = false,
     mappings = {
       n = {
         ["q"] = actions.close
       },
+      i = {
+        ["<esc>"] = actions.close
+      }
     },
   },
   pickers = {
@@ -19,6 +22,16 @@ telescope.setup({
         "node_modules",
         ".git"
       },
+      theme = "dropdown"
     },
+    git_files = {
+      theme = "dropdown"
+    },
+    live_grep = {
+      theme = "dropdown"
+    },
+    grep_string = {
+      theme = "dropdown"
+    }
   },
 })

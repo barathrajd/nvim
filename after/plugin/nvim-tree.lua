@@ -10,19 +10,6 @@ require("nvim-tree").setup({
         { key = "u", action = "dir_up" },
       },
     },
-    -- float = {
-    --   enable = true,
-    --   quit_on_focus_loss = true,
-    --   open_win_config = {
-    --     relative = "editor",
-    --     border = "rounded",
-    --     width = 30,
-    --     height = 30,
-    --     row = 1,
-    --     col = 1,
-    --   },
-    -- },
-
   },
   renderer = {
     group_empty = true,
