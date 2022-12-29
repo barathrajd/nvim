@@ -28,3 +28,6 @@ map("n", "<C-h>", "<C-w><C-h>", options)
 map("n", "<C-j>", "<C-w><C-j>", options)
 map("n", "<C-k>", "<C-w><C-k>", options)
 map("n", "<C-l>", "<C-w><C-l>", options)
+
+-- Source lua files
+map("n", "<C-r>", ":luafile %<CR>", options)
