@@ -93,6 +93,8 @@ return packer.startup(function(use)
     end,
   })
   -- Theme
+  use("JoosepAlviste/palenightfall.nvim")
+  use("rebelot/kanagawa.nvim")
   use({ 'olimorris/onedarkpro.nvim' })
   -- Nvim surround
   use({
