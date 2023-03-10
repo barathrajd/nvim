@@ -110,7 +110,7 @@ nvim_lsp.sourcekit.setup({
   capabilities = capabilities,
 })
 
-nvim_lsp.sumneko_lua.setup({
+nvim_lsp.lua_lua.setup({
   capabilities = capabilities,
   on_attach = function(client, bufnr)
     on_attach(client, bufnr)
@@ -122,7 +122,6 @@ nvim_lsp.sumneko_lua.setup({
         -- Get the language server to recognize the `vim` global
         globals = { "vim" },
       },
-
       workspace = {
         -- Make the server aware of Neovim runtime files
         library = vim.api.nvim_get_runtime_file("", true),
