@@ -1,5 +1,3 @@
---vim.lsp.set_log_level("debug")
-
 local status, nvim_lsp = pcall(require, "lspconfig")
 if not status then
   return
@@ -110,7 +108,7 @@ nvim_lsp.sourcekit.setup({
   capabilities = capabilities,
 })
 
-nvim_lsp.lua_lua.setup({
+nvim_lsp.lua_ls.setup({
   capabilities = capabilities,
   on_attach = function(client, bufnr)
     on_attach(client, bufnr)
